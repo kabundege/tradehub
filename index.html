@@ -76,9 +76,9 @@
         </ul>
       </header>
     </nav>
-    <div class="flex relative overflow-hidden">
+    <div class="flex overflow-hidden border-b-2 border-[#333] pb-1">
       <div
-        class="h-[90vh] w-[550px] mx-auto flex gap-5 justify-center items-start transform -translate-x-32 flex-col relative z-10"
+        class="h-full py-40 w-[600px] hero  mx-auto flex gap-5 justify-center items-start transform -translate-x-32 flex-col relative z-10"
       >
         <h1 class="font-bold text-7xl text-[#111]">
           With <br /><span class="text-white text-stroke">TRADE</span>
@@ -90,14 +90,14 @@
           excellence to global markets
         </p>
         <div class="flex items-center gap-10">
-          <a href="#products">
+          <a href="#products" class="relative z-20">
             <div
               class="bg-gradient-to-bl uppercase rounded-full rounded-tl-none font-medium from-green-600 to-lime-500 text-white px-8 py-3"
             >
               See all products
             </div>
           </a>
-          <a href="#products" class="flex items-center gap-3">
+          <a href="#How-we-work" class="flex items-center gap-3">
             <div
               class="py-2 px-3 rounded-full border-2 border-green-600 transform -rotate-45"
             >
@@ -106,20 +106,14 @@
             <p class="text-green-800">How we work</p>
           </a>
         </div>
+        <div class="absolute left-[-52.5%] w-full h-full avocadoBg" ></div>
       </div>
-      <img
-        src="./public/avocado-2.png"
-        class="w-[700px] transform -rotate-90 filter drop-shadow-md absolute z-0 bottom-0 left-[65%]"
-        alt="logo"
-        decoding="async"
-        loading="lazy"
-      />
     </div>
-    <div class="w-full">
-      <div class="py-20 2xl:container mx-auto" id="products">
-        <h2 class="text-center font-bold text-4xl uppercase">Products</h2>
+    <div class="w-full bg-[#111]">
+      <div class="py-32 2xl:container mx-auto avocadoBg " id="products">
+        <h2 class="text-center font-bold text-5xl uppercase text-white">Products</h2>
         <p
-          class="text-center text-xl text-gray-500 font-light max-w-[800px] mx-auto mt-5 mb-10"
+          class="text-center text-lg text-gray-100 font-light max-w-[800px] mx-auto mt-5 mb-10"
         >
           At the heart of our export portfolio are Has avocados, known for their
           rich flavor and nutritional value. Our commitment to quality and
@@ -129,7 +123,7 @@
           class="mx-auto lg:px-20 conatiner grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
         >
           <div
-            class="bg-gradient-to-tl from-[#71b62841] backdrop-blur-sm rounded p-10 grid gap-5 border"
+            class="bg-gradient-to-tl from-[#71b62841] backdrop-blur-sm rounded p-10 grid gap-5 border border-[#333] "
           >
             <img
               decoding="async"
@@ -137,14 +131,14 @@
               src="./public/avocado.png"
               class="w-32 h-32 object-contain"
             />
-            <h2 class="font-semibold text-xl text-[#72B628ff]">Avocado</h2>
-            <p class="text-gray-700">
+            <h2 class="font-semibold filter drop-shadow-lg  text-xl text-[#72B628ff]">Avocado</h2>
+            <p class="text-gray-50 font-light">
               Enjoy a flawless avocado – firm, creamy, and richly buttery. A
               delightful treat in every vibrant green bite.
             </p>
           </div>
           <div
-            class="bg-gradient-to-tl from-[#fd901331] backdrop-blur-sm rounded p-10 grid gap-5 border"
+            class="bg-gradient-to-tl from-[#fd901331] backdrop-blur-sm rounded p-10 grid gap-5 border border-[#333] "
           >
             <img
               decoding="async"
@@ -152,16 +146,16 @@
               src="./public/Golden.png"
               class="w-32 h-32 object-contain"
             />
-            <h2 class="font-semibold text-[#FD9013ff] text-xl">
+            <h2 class="font-semibold filter drop-shadow-lg  text-[#FD9013ff] text-xl">
               Golden Berrys
             </h2>
-            <p class="text-gray-700">
+            <p class="text-gray-50 font-light">
               Savor the golden berry – a sweet and tangy delight, a burst of
               sunshine in every bite.
             </p>
           </div>
           <div
-            class="bg-gradient-to-tl from-[#95401f2e] backdrop-blur-sm rounded p-10 grid gap-5 border"
+            class="bg-gradient-to-tl from-[#95401f2e] backdrop-blur-sm rounded p-10 grid gap-5 border border-[#333] "
           >
             <img
               decoding="async"
@@ -169,8 +163,8 @@
               src="./public/macadamia.png"
               class="w-32 h-32 object-cover"
             />
-            <h2 class="font-semibold text-xl text-[#95411Fff]">Macadamia</h2>
-            <p class="text-gray-700">
+            <h2 class="font-semibold filter drop-shadow-lg text-xl text-[#bc633f]">Macadamia</h2>
+            <p class="text-gray-50 font-light">
               Savor the buttery richness of macadamia nuts – a creamy, nutty
               delight in every bite.
             </p>
@@ -197,8 +191,8 @@
         <div class="grid relative">
           <div class="relative" id="vision">
             <div class="p-20 pb-5 relative z-10">
-              <h2 class="font-bold text-4xl uppercase">Vision</h2>
-              <p class="text-left text-gray-500 font-light mx-auto mt-5 mb-10">
+              <h2 class="font-bold text-4xl uppercase text-white">Vision</h2>
+              <p class="text-left text-white font-light mx-auto mt-5 mb-10">
                 Looking forward, our goal is to expand our reach, connecting
                 Rwanda's rich agricultural products with markets across the
                 globe. We are actively seeking partnerships and opportunities to
@@ -206,45 +200,65 @@
               </p>
             </div>
             <div
-              class="absolute left-0 top-0 h-full w-[1000%] bg-gray-100 z-0"
+              class="absolute left-0 top-0 h-full w-[1000%] bg-[#1a1a1a] z-0"
             ></div>
           </div>
           <div class="relative" id="mission">
             <div class="relative z-10 p-20 pb-5">
-              <h2 class="font-bold text-4xl uppercase text-white">Mission</h2>
-              <p class="text-left text-gray-200 font-light mx-auto mt-5 mb-10">
+              <h2 class="font-bold text-4xl uppercase">Mission</h2>
+              <p class="text-left text-gray-500 font-light mx-auto mt-5 mb-10">
                 Our mission is to forge reliable and sustainable trade
                 partnerships worldwide. We strive to deliver exceptional quality
                 and service, ensuring that our products meet the highest
                 international standards.
               </p>
             </div>
-            <div class="absolute left-0 top-0 h-full w-[1000%] bg-[#111]"></div>
+            <div class="absolute left-0 top-0 h-full w-[1000%] bg-gray-100"></div>
           </div>
         </div>
       </div>
     </div>
-    <footer class="bg-[#1a1a1a]">
+    <div class="container mx-auto flex flex-col items-center py-20" id="How-we-work">
+      <h1
+        class="font-extrabold text-transparent relative text-8xl bg-clip-text bg-gradient-to-tr from-green-900 to-lime-600 uppercase"
+      >How we work</h1>
+      <p class="text-justify w-[1000px] my-10 text-gray-700 text-light">we passionately connect farmers with consumers by sourcing the finest fruits and delivering them worldwide. Committed to sustainability and fair trade, we forge strong relationships with local farmers to ensure top-quality produce. Meticulously selected for ripeness and flavor, our fruits undergo seamless handling in state-of-the-art facilities with cutting-edge technology, guaranteeing peak freshness. With a global distribution network, we provide timely deliveries without compromising quality, reaching retailers, distributors, and consumers. Certified for excellence in organic practices and food safety, <strong>Trade HUB</strong> invites you to savor the natural richness of premium fruits, delivered to your table with care and precision.</p>
+      <div class="flex w-[1000px] mx-auto justify-between">
+        <div>
+          <h2 class="text-green-700 font-semibold">Working Hours</h2>
+          <p class="text-black font-medium">24/7</p>
+        </div>
+        <div>
+          <h2 class="text-green-700 font-semibold text-center">Languages</h2>
+          <p class="text-black font-medium text-sm">English &bull; French &bull; Swahili</p>
+        </div>
+        <div>
+          <h2 class="text-green-700 font-semibold">Working Location</h2>
+          <p class="text-black font-medium text-sm text-right">Kigali &bull; Rwanda</p>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-gray-50">
       <div class="mx-auto container pt-5">
         <div class="flex items-start gap-20 py-10">
           <div class="grid flex-1">
             <img
               decoding="async"
               loading="lazy"
-              src="public/trade-hub-white-logo.png"
+              src="public/trade-hub-black-logo.png"
               class="w-40"
             />
-            <p class="text-sm max-w-[500px] text-gray-200">
+            <p class="text-sm max-w-[500px] text-gray-900">
               we are a company with a deep rooted commitment to quality and
               excellence to global markets
             </p>
           </div>
-          <div class="grid gap-2 text-gray-100">
+          <div class="grid gap-2 text-gray-800">
             <h3 class="text-lime-500 mb-1">Company</h3>
             <a href="#home" class="text-sm">Home</a>
             <a href="#products" class="text-sm">Products</a>
           </div>
-          <div class="grid gap-2 text-gray-100">
+          <div class="grid gap-2 text-gray-800">
             <h3 class="text-lime-500 mb-1">Contact</h3>
             <a href="mailto:Info@tradehubrw.com" class="text-sm"
               >Info@tradehubrw.com</a
@@ -256,7 +270,7 @@
           </div>
         </div>
         <div class="flex items-center justify-between py-5 border-t">
-          <p class="font-light text-sm text-gray-100">
+          <p class="font-light text-sm text-gray-700">
             &copy; 2022 TRADE HUB - All right reserved
           </p>
           <div class="flex items-center justify-between gap-5">
