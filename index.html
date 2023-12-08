@@ -58,29 +58,32 @@
           decoding="async"
           loading="lazy"
         />
-        <ul
-          class="flex items-center gap-16 relative uppercase text-sm font-medium text-black overflow-x-scroll whitespace-nowrap py-3 lg:py-0"
-        >
-          <li class="hover:opacity-75 cursor-pointer">
-            <a href="#vision" class="hover:opacity-80"> Vision </a>
-          </li>
-          <li class="hover:opacity-75 cursor-pointer">
-            <a href="#mission" class="hover:opacity-80"> Mission </a>
-          </li>
-          <li class="hover:opacity-75 cursor-pointer">
-            <a href="#story" class="hover:opacity-80"> Our Story </a>
-          </li>
-          <li class="hover:opacity-75 cursor-pointer">
-            <a href="#contact-us" class="hover:opacity-80"> Contact us </a>
-          </li>
-          <div class="" ></div>
-        </ul>
+        <div class="relative">
+          <ul
+            class="flex items-center gap-16 relative uppercase text-sm font-medium text-black overflow-x-scroll whitespace-nowrap py-3 lg:py-0"
+          >
+            <li class="hover:opacity-75 cursor-pointer">
+              <a href="#vision" class="hover:opacity-80"> Vision </a>
+            </li>
+            <li class="hover:opacity-75 cursor-pointer">
+              <a href="#mission" class="hover:opacity-80"> Mission </a>
+            </li>
+            <li class="hover:opacity-75 cursor-pointer">
+              <a href="#story" class="hover:opacity-80"> Our Story </a>
+            </li>
+            <li class="hover:opacity-75 cursor-pointer">
+              <a href="#contact-us" class="hover:opacity-80"> Contact us </a>
+            </li>
+            <div class="mx-5 lg:hidden"></div>
+          </ul>
+          <div class="absolute top-0 right-0 w-[20%] h-full bg-gradient-to-r from-transparent to-white" ></div>
+        </div>
         <div class="absolute top-2 right-5 lg:hidden animate-pulse">
           <i class="fas fa-arrow-right text-gray-300 text-base"></i>
         </div>
       </header>
     </nav>
-    <div class="flex overflow-hidden border-b-2 border-[#333] pb-1">
+    <div class="flex overflow-hidden border-b-2 border-[#333] pb-1 relative">
       <div
         class="h-full pt-56 pb-20 lg:py-40 w-[90%] lg:w-[600px] hero  mx-auto flex gap-5 lg:gap-10 justify-center items-start transform lg:-translate-x-32 flex-col relative z-10"
       >
@@ -112,6 +115,7 @@
         </div>
         <div class="absolute left-[-52.5%] w-full h-full hidden lg:block avocadoBg" ></div>
       </div>
+      <div class="avocadoBg absolute w-full h-[110%] bottom-0 lg:hidden"></div>
     </div>
     <div class="w-full bg-[#111]">
       <div class="py-20 lg:py-32 w-[90%] lg:w-full 2xl:container mx-auto avocadoBg " id="products">
