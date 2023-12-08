@@ -46,6 +46,28 @@ a:hover {
     transform: scale(.8) translate(-10%,-15%);
 }
 
+
+@media screen and (max-width:700px) {
+    .hero::after{
+        content: url(./public/avocado-2.png);
+        position: absolute;
+        width: 100%;
+        z-index: -100;
+        transform: scale(.35) translateY(-95%);
+        left: 0;
+        top: 0;
+    }
+
+    .flavor::before{
+        content: url('./public/green-underline.png');
+        position: absolute;
+        z-index: -10;
+        top: 20%;
+        transform: scale(.5) translate(-40%,-50%);
+    }
+}
+
+
 /* Colors */
 /* 
 $kelly-green: #72B628ff;
